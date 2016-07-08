@@ -61,6 +61,25 @@ namespace UnitTestProject1
         }
 
         /// <summary>
+        /// Click on specific menu in menu bar
+        /// </summary>
+        /// <param name="menu">menu name</param>
+        public void ClickMenu(string menu)
+        {
+            window.MenuBar.MenuItem(menu).Click();
+        }
+
+        /// <summary>
+        /// Check if menu item is enabled
+        /// </summary>
+        /// <param name="item">item name</param>
+        /// <returns>true if item is enabled, false if not</returns>
+        public bool IsMenuItemEnabled(string item)
+        {
+            return window.MenuBar.MenuItem(item).Enabled;
+        }
+
+        /// <summary>
         /// Check if notepad process is running
         /// </summary>
         /// <returns></returns>

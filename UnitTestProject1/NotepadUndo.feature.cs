@@ -17,22 +17,22 @@ namespace UnitTestProject1
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("Notepad", Description="\tIn order to cancel entered text\r\n\tAs advanced Notepad user\r\n\tI want to select Un" +
-        "do item from Edit menu", SourceFile="NotepadSave.feature", SourceLine=0)]
+    [TechTalk.SpecRun.FeatureAttribute("Notepad", Description="\tIn order to cancel entered before text\r\n\tAs advanced Notepad user\r\n\tI want to se" +
+        "lect Undo item from Edit menu", SourceFile="NotepadUndo.feature", SourceLine=0)]
     public partial class NotepadFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "NotepadSave.feature"
+#line 1 "NotepadUndo.feature"
 #line hidden
         
         [TechTalk.SpecRun.FeatureInitialize()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Notepad", "\tIn order to cancel entered text\r\n\tAs advanced Notepad user\r\n\tI want to select Un" +
-                    "do item from Edit menu", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Notepad", "\tIn order to cancel entered before text\r\n\tAs advanced Notepad user\r\n\tI want to se" +
+                    "lect Undo item from Edit menu", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -63,22 +63,20 @@ namespace UnitTestProject1
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Undo input", new string[] {
-                "simpleSpecFlowScenarioForDemo"}, SourceLine=6)]
-        public virtual void UndoInput()
+        [TechTalk.SpecRun.ScenarioAttribute("Undo user input", new string[] {
+                "launch_notepad"}, SourceLine=6)]
+        public virtual void UndoUserInput()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Undo input", new string[] {
-                        "simpleSpecFlowScenarioForDemo"});
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Undo user input", new string[] {
+                        "launch_notepad"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
- testRunner.Given("I have launched Notepad", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have typed \'text to be removed\' text", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
- testRunner.And("I have typed \'it works ;)\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 10
  testRunner.When("I select \'Undo\' from \'Edit\' menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 11
- testRunner.Then("entered \'it works ;)\' is removed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 10
+ testRunner.Then("entered \'text to be removed\' is removed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -76,10 +76,10 @@
   </Choose>
   <ItemGroup>
     <Compile Include="NotepadApp.cs" />
-    <Compile Include="NotepadSave.feature.cs">
+    <Compile Include="NotepadUndo.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NotepadSave.feature</DependentUpon>
+      <DependentUpon>NotepadUndo.feature</DependentUpon>
     </Compile>
     <Compile Include="NotepadUndoSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,9 +89,9 @@
     <None Include="Default.srprofile">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="NotepadSave.feature">
+    <None Include="NotepadUndo.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>NotepadSave.feature.cs</LastGenOutput>
+      <LastGenOutput>NotepadUndo.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="runtests.cmd" />
