@@ -1,0 +1,50 @@
+﻿VS filter: testpath:TestAssembly:UnitTestProject1/Feature:Notepad/Scenario:Undo+user+input
+Discovering target: Default
+Discovering tests from assembly: C:\Users\D752103\documents\visual studio 2015\Projects\NotepadSpecFlow1\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+Appdomain Disposed
+Test Suite Dump
+#0: UnitTestProject1/Default - 
+#1: Default - 
+#2: UnitTestProject1 - 
+#3: Notepad - 
+#4: Undo user input - TestAssembly:UnitTestProject1/Feature:Notepad/Scenario:Undo+user+input
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread
+Thread#0:Scheduler: using testitem #4 for thread
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for UnitTestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\D752103\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:[Info - 8:35:11 PM] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using TableVerticalScrollBar=Vertical Scroll Bar for White/UIItemId
+Thread#0:T:[Info - 8:35:11 PM] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using TableHorizontalScrollBar=Horizontal Scroll Bar for White/UIItemId
+Thread#0:T:[Info - 8:35:11 PM] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using TableColumn=Row  for White/UIItemId
+Thread#0:T:[Info - 8:35:11 PM] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using TableTopLeftHeaderCell=Top Left Header Cell for White/UIItemId
+Thread#0:T:[Info - 8:35:11 PM] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using TableCellNullValue=(null) for White/UIItemId
+Thread#0:T:[Info - 8:35:11 PM] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using TableHeader=Top Row for White/UIItemId
+Thread#0:T:[Info - 8:35:11 PM] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using HorizontalScrollBar=Horizontal ScrollBar for White/UIItemId
+Thread#0:T:[Info - 8:35:11 PM] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using VerticalScrollBar=Vertical ScrollBar for White/UIItemId
+Thread#0:T:[Info - 8:35:11 PM] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using TableCellPrefix= Row  for White/UIItemId
+Thread#0:B:Given I have typed 'text to be removed' text
+Thread#0:T:done: NotepadUndoSteps.GivenIHaveTyped("text to be removed") (0.0s)
+Thread#0:B:When I select 'Undo' from 'Edit' menu
+Thread#0:T:done: NotepadUndoSteps.WhenISelectFromMenu("Undo", "Edit") (1.0s)
+Thread#0:B:Then entered 'text to be removed' is removed
+Thread#0:T:done: NotepadUndoSteps.ThenEnteredIsRemoved("text to be removed") (0.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread 
+Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 1.7935547 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0
