@@ -4,6 +4,7 @@ Demonstration of using SpecFlow and TestStack.White  to test Undo feature in win
 
 the following tests are implemented(https://github.com/mrag/NotepadSpecFlow1/blob/master/UnitTestProject1/NotepadUndo.feature):
 
+```cucumber
 Feature: Notepad Undo
 	In order to cancel entered before text
 	As advanced Notepad user
@@ -18,5 +19,6 @@ Scenario: Undo user input
 	Given I have undone 'text to be removed' text
 	When I select 'Undo' from 'Edit' menu
 	Then entered 'text to be removed' is restored
+```
 
 Test execution have been recorded and availabled by the link: https://youtu.be/Sn9UTcdgQJY 
