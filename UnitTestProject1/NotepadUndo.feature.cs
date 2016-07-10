@@ -17,9 +17,9 @@ namespace UnitTestProject1
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("Notepad", Description="\tIn order to cancel entered before text\r\n\tAs advanced Notepad user\r\n\tI want to se" +
+    [TechTalk.SpecRun.FeatureAttribute("Notepad Undo", Description="\tIn order to cancel entered before text\r\n\tAs advanced Notepad user\r\n\tI want to se" +
         "lect Undo item from Edit menu", SourceFile="NotepadUndo.feature", SourceLine=0)]
-    public partial class NotepadFeature
+    public partial class NotepadUndoFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,7 +31,7 @@ namespace UnitTestProject1
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Notepad", "\tIn order to cancel entered before text\r\n\tAs advanced Notepad user\r\n\tI want to se" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Notepad Undo", "\tIn order to cancel entered before text\r\n\tAs advanced Notepad user\r\n\tI want to se" +
                     "lect Undo item from Edit menu", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -77,6 +77,12 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.When("I select \'Undo\' from \'Edit\' menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
  testRunner.Then("entered \'text to be removed\' is removed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 12
+ testRunner.Given("I have undone \'text to be removed\' text", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 13
+ testRunner.When("I select \'Undo\' from \'Edit\' menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 14
+ testRunner.Then("entered \'text to be removed\' is restored", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

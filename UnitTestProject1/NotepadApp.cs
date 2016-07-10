@@ -16,6 +16,7 @@ namespace UnitTestProject1
 
         private const string APP_NAME = "Notepad.exe";
         private string fileName;
+        private string previousInput = "";
 
         public NotepadApp(string fileName)
         {
@@ -38,6 +39,7 @@ namespace UnitTestProject1
         /// <param name="text"></param>
         public void TypeText(string text)
         {
+            previousInput = GetText();
             Keyboard.Instance.Send(text, window);
         }
 
@@ -51,12 +53,22 @@ namespace UnitTestProject1
         }
 
         /// <summary>
+        /// Get text inputted before 
+        /// </summary>
+        /// <returns>text as string</returns>
+        public string GetPreviousText()
+        {
+            return previousInput;
+        }
+
+        /// <summary>
         /// Click on specific item of menu
         /// </summary>
         /// <param name="menu">menu name</param>
         /// <param name="item">item name</param>
         public void ClickMenuItem(string menu, string item)
         {
+            previousInput = GetText();
             window.MenuBar.MenuItem(menu, item).Click();
         }
 
