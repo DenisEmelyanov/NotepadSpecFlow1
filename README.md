@@ -2,7 +2,7 @@
 
 Demonstration of using SpecFlow and TestStack.White  to test Undo feature in windows Notepad
 
-the following tests are implemented(https://github.com/mrag/NotepadSpecFlow1/blob/master/UnitTestProject1/NotepadUndo.feature):
+the following tests are implemented (NotepadUndo.feature):
 
 ```cucumber
 Feature: Notepad Undo
